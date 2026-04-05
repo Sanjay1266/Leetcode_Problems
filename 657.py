@@ -13,7 +13,7 @@ def judgeCircle(moves) -> bool:
             Y -= 1
     value = X - Y
     print (value)
-    if (value == 0):
+    if (X ==0 and Y == 0):
             return True 
     else: 
             return False 
