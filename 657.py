@@ -13,6 +13,11 @@ def judgeCircle(moves) -> bool:
             Y -= 1
     value = X - Y
     print (value)
-    return(value)
+    if (value == 0):
+            return True 
+    else: 
+            return False 
 
 thing = judgeCircle(["D","U","L","R"])
+thing2 = judgeCircle(["D","U","L","R","R"])
+print(thing2)
