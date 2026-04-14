@@ -1,11 +1,15 @@
-public class Concatenation_of_Array {
-    public static void main(String[] args) {
-        int [] num = {1,2,3};
-        int i;
-        len = num.length;
-        for (i=0;i<len;i++){
-
-        }
-
+class Solution {
+    public int[] getConcatenation(int[] nums) {
+        int answer[] = new int[ 2 * nums.length];
+        for ( int i = 0 ; i < nums.length;i++){
+            answer[i] = nums[i];
+        } 
+        int index = nums.length;
+            for ( int i = 0 ; i < nums.length;i++){
+            answer[index] = nums[i];
+            index ++ ;
+        } 
+          return answer;
     }
+ 
 }
